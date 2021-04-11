@@ -1,0 +1,85 @@
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 100%;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    font-size: 68px;
+    background-color: aliceblue;
+    padding: 8px 24px;
+    border-radius: 16px;
+}
+
+div:nth-child(1) {
+    background-image: url(img/1.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+div:nth-child(2) {
+    background: coral;
+}
+
+div:nth-child(3) {
+    background-image: url(img/2.jpg);
+    height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div:nth-child(4) {
+    background: violet;
+}
+
+
+/* width */
+
+/*firefox için  scroll bar duzenleme kodu*/
+
+:root {
+    scrollbar-color: rgb(120, 18, 18, 0) rgb(120, 140, 4, 0) !important;
+    scrollbar-width: thin !important;
+
+}
+
+/*firefox için  scroll bar duzenleme kodu*/
+
+/*chrome için scrollbar duzenleme kodu.*/
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px rgb(224, 109, 109, 0); 
+    border-radius: 10px;
+    
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #C3C3C3;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0D0D0D;
+    
+}
